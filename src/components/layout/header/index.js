@@ -17,7 +17,7 @@ const Header = () => {
 				</div>
 			</div>
 			<div className={rightCorner}>
-				<a className={styles.checkWeather} target="_blank"><span>Check weather</span></a>
+
 			</div>
 		</div>
 	);

@@ -1,4 +1,4 @@
-.sidebartitle {
+.sidebarTitle {
     font-family: Roboto, monospace;
     position: fixed;
     display: none;
@@ -14,21 +14,17 @@
     word-spacing: 6px
 }
 @media (min-width: 768px) {
-    .sidebartitle {
+    .sidebarTitle {
         display: flex
     }
 }
-.sidebartitle::before {
-    content: attr("yesmate");
+.sidebarTitle::before {
+    content: attr(title);
     transform: rotate(-90deg);
     white-space: nowrap
 }
 
-.sidebartitle::after {
-  content: attr("nomate");
-  transform: rotate(-90deg);
-  white-space: nowrap
-}
+
 
 .justifyCenter {
     justify-content: center

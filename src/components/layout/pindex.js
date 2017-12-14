@@ -33,9 +33,9 @@ class Layout extends Component {
 }
 
 function mapStateToProps(state){
-  console.log(state.sidetext)
+  console.log(state)
   return {
-    sideText: state.sidetext,
+    sideText: state.sideText,
   }
 }
 

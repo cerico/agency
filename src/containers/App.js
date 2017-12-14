@@ -10,16 +10,17 @@ const classNames = require('classnames');
 import Content from '../components/content/index.js';
 import Layout from '../components/layout/pindex.js';
 import { getProducts } from '../actions/products';
-import Buttons from './buttons//js/App';
-import './buttons/styles/index.css';
-import './buttons/styles/App.css';
+import '../index.css';
 console.log(Layout)
 class App extends React.Component  {
 
   render(){
 
     return (
-      <Buttons/>
+      <div className="mate">
+      <Layout/>
+      <Content/>
+      </div>
     );
   }
 }

@@ -30,7 +30,7 @@
  }
  @media (min-width: 768px) {
      section {
-          width: calc(100vw - 196px);
+          width: calc(100vw);
           margin-left: 80px;
           padding: 100px
      }
