@@ -48,7 +48,7 @@ body .fadeOut{
     transform: scale(0.5);
     bottom: 0;
     border: 10px solid #313b89;
-    background: url('../layout/header/img/grey.png');
+    background: url('/public/img/grey.png');
     color: #313b89;
     background-size: auto;
     background-repeat: repeat;
