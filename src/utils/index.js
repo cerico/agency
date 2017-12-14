@@ -8,10 +8,9 @@ export const addLast = (product) => {
   return last
 }
 
-export const getImage = (id) => {
+export const getImage = (img) => {
   const IMG_URL = window.location.host
-  const image = `http://${IMG_URL}/public/product1.jpg`
+  const image = `http://${IMG_URL}/public/img/${img}.png`
+  console.log(image)
   return image
 }
-
-

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import styles from './Person.css';
 import BodyColor from './Body.js';
+import { getImage } from '../../utils'
 
 const classNames = require('classnames');
 
@@ -13,7 +14,8 @@ class Person extends Component {
 
 	render() {
 		const showModal = this.props.showModal;
-		const itemPic = require(`./img/${this.props.manager.split(" ")[1].toLowerCase()}.png`)
+    const itemPic = getImage(this.props.manager.split(" ")[1].toLowerCase())
+    console.log(itemPic)
     const developer = this.props.dev
     console.log(itemPic)
 
