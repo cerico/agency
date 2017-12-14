@@ -7,35 +7,25 @@ import {
 } from 'react-router-dom';
 const classNames = require('classnames');
 
-import Product from '../components/Product';
-import Products from '../components/Products';
-import { getProducts } from '../actions/Products';
-
+import Content from '../components/content/index.js';
+import Layout from '../components/layout/pindex.js';
+import { getProducts } from '../actions/products';
+import Buttons from './buttons//js/App';
+import './buttons/styles/index.css';
+import './buttons/styles/App.css';
+console.log(Layout)
 class App extends React.Component  {
 
-  componentWillMount () {
-    this.props.getProducts()
-  }
-  
   render(){
 
     return (
-      <Router>
-        <main>
-          <Route component={Products}/>
-          <div>
-            <Switch>
-              <Route exact path="/" />
-              <Route path="/products/:id" component={Product} />
-            </Switch>
-          </div>
-        </main>
-      </Router>
+      <Buttons/>
     );
   }
 }
 
 const mapStateToProps = (state) => {
+  console.log(state)
   return ({
       products: state.products
     })

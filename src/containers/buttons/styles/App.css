@@ -1,0 +1,132 @@
+
+body{
+  background-color: #e0446f;
+}
+
+#form {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  height: 900px;
+  margin-top: 100px;
+}
+
+/*checkbox*/
+.checkbox {
+  width: 32px;
+  height: 32px;
+  border-radius: 55%;
+  border-style: solid;
+  border-color:#FFF;
+  cursor: pointer;
+}
+.checkbox.checked {
+  background-color: #EBDE3C;
+  background-image: url("./../img/tick.png");
+  border-style: solid;
+  border-color: transparent;
+  background-size: 104.8% 82%;
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+}
+
+/*Radio Button*/
+.radiobutton{
+  background-color: #e0446f;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 7px #e0446f, inset 0 0 0 9px #FFF;
+  border-style: solid;
+  border-color: white;
+  cursor: pointer;
+}
+.radiobutton.On{
+  background-color: #3c3c3c;
+  background-color: #3c3c3c;
+  width: 38px;
+  height: 38px;
+  box-shadow: inset 0 0 0 10px #EBDE3C, inset 0 0 0 0px transparent;
+  border-style: none;
+}
+
+.inner{
+  width: 12.5px;
+  height: 2%;
+  border-radius: 55%;
+  border-style: solid;
+  border-color: #FFF;
+  cursor: pointer;
+  background-color: #e0446f;
+  padding-bottom: 12.1px;
+  position: relative;
+  margin:-29px 0px 12px .75%;
+  }
+.inner.selected{
+  border-style: solid;
+  border-color: transparent;
+  background-color: #423e3e;
+  }
+
+/*Toggle Switch*/
+.switch{
+  width: 60px;
+  height: 26px;
+  background-color: #3C3C3C;
+  border-radius: 34px;
+  cursor: pointer;
+}
+.switch:before {
+  position: relative;
+  content: "o";
+  left: 3px;
+  background-color: #FFF;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  top: 3px;
+  padding-right: 9.9px;
+  color: #fff;
+  }
+.switch:after {
+  content: "o";
+  color: #FFF;
+  position: relative;
+  left: 69%;
+  top: -56%;
+  display: block;
+}
+
+.switch.on {
+  background-color: #17A7A8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.on:before {
+  left: 39px;
+}
+.on:after {
+  content: "|";
+  color: #FFF;
+  position: relative;
+  left: 19%;
+  display: block;
+  width: 35%;
+  top: -45%;
+}
+
+/*Buttons*/
+.primary{
+  background-color: #17A7A8;
+  border-radius: 28px;
+  font-size: 23px;
+  color: white;
+  padding: 12px 26px 13px 29px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.primary:active{
+  background-color: #EBDE3C;
+  color: #3c3c3c;
+}

@@ -1,0 +1,66 @@
+.closeModal {
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 1;
+    color: #313b89;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+.closeModal span {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px
+}
+.closeModal:hover {
+    opacity: .6
+}
+
+.noscroll{
+    overflow:hidden;
+}
+
+.personBioImage {
+    width:29%;
+    height:auto;
+}
+
+body .fadeIn{
+    transition: transform 0.4s ,opacity 0.4s ;
+    transform-origin: center;
+    transform: scale(1);
+    opacity: 1 
+}
+
+body .fadeOut{
+    transition: transform 0.4s ,opacity 0.4s ;
+    transform-origin: center;
+    transform: scale(0);
+    opacity: 0
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: scale(0.5);
+    bottom: 0;
+    border: 10px solid #313b89;
+    background: url('../layout/header/img/grey.png');
+    color: #313b89;
+    background-size: auto;
+    background-repeat: repeat;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    z-index: 9;
+    opacity:0
+}
+@media (min-width: 768px) {
+    .modal {
+        width: auto;
+        border: 20px solid #313b89
+    }
+}

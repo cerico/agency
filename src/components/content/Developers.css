@@ -1,0 +1,35 @@
+ section {
+     width: 92vw;
+     min-height: 100vh;
+     padding: 100px 20px;
+     background: url(./img/purps.png);
+ }
+ @media (min-width: 768px) {
+     section {
+          width: calc(100vw - 196px);
+          margin-left: 80px;
+          padding: 100px
+     }
+ }
+ .sectionTitle {
+     max-width: 800px;
+     font-family: Raleway, monospace;
+     color: #7af6dd;
+     font-size: 48px;
+     font-weight: 900;
+     line-height: 1;
+     margin-bottom: 60px;
+     text-transform: uppercase
+ }
+ @media (min-width: 768px) {
+     .sectionTitle {
+         font-size: 5.5rem
+     }
+ }
+
+ .fade{
+    transition: transform 5.28s cubic-bezier(.75,0,.25,1),opacity 5.28s cubic-bezier(.75,0,.25,1);
+    transform-origin: center;
+    transform: scale(1);
+    opacity: 1 !important;
+}

@@ -1,0 +1,65 @@
+.mc {
+     position: relative;
+     z-index: 2;
+     width: 100%;
+     max-width: 920px;
+     color: #fff;
+     margin: 0 auto;
+     margin-left:4%;
+ }
+
+ .mc {
+     width:96%;
+ }
+
+ @media (min-width: 768px) {
+     .mc {
+         width:76%;
+         margin-left:0 auto;
+     }
+     .sc {
+          margin-left:0 auto
+     }
+ }
+
+  section {
+     width: 92vw;
+     min-height: 100vh;
+     padding: 100px 20px;
+     background: url(./img/purps.png);
+ }
+ @media (min-width: 768px) {
+     section {
+          width: calc(100vw - 196px);
+          margin-left: 80px;
+          padding: 100px
+     }
+ }
+ .sectionTitle {
+     max-width: 800px;
+     font-family: Raleway, monospace;
+     color: #7af6dd;
+     font-size: 48px;
+     font-weight: 900;
+     line-height: 1;
+     margin-bottom: 60px;
+     text-transform: uppercase
+ }
+ @media (min-width: 768px) {
+     .sectionTitle {
+         font-size: 5.5rem
+     }
+ }
+ .sectionCopy {
+     color: #fff
+ }
+
+  p{
+     font-size: 18px;
+         line-height: 1.5;
+         margin: 0 0 50px;
+         font-weight: 400;
+         font-family: monospace;
+         font-weight: 400;
+         -webkit-font-smoothing: antialiased
+ }

@@ -5,10 +5,12 @@ import {
   } from 'redux';
 import thunk from 'redux-thunk';
 
-import products from './reducers/products';
+import sideText from './reducers/side-text';
+import people from './reducers/people';
 
 const reducers = combineReducers({
-  products
+  sideText,
+  people
 });
 const middleware = [thunk];
 
