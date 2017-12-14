@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .purp{
-    background: url(./img/pink.png);
+    background: url(/public/img/pink.png);
 
-     background: url(./img/darkpurps.png);
+     background: url(/public/img/darkpurps.png);
      -webkit-font-smoothing: antialiased;
  }
 

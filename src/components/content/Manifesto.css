@@ -26,7 +26,7 @@
      width: 92vw;
      min-height: 100vh;
      padding: 100px 20px;
-     background: url(./img/purps.png);
+     background: url(/public/img/purps.png);
  }
  @media (min-width: 768px) {
      section {

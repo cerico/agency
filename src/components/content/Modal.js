@@ -5,6 +5,7 @@ import styles from './Modal.css';
 import BodyColor from './Body.js';
 import ArrowCircleLeft from 'react-icons/lib/fa/arrow-circle-left';
 const classNames = require('classnames');
+import { getImage } from '../../utils'
 
 class Modal extends Component {
 
@@ -33,7 +34,7 @@ class Modal extends Component {
 
 	renderModalContent() {
 
-		const personPic = require(`./img/${this.props.modalContent.themanager.split(" ")[1].toLowerCase()}.png`)
+		const personPic = getImage(this.props.modalContent.themanager.split(" ")[1].toLowerCase())
 		const closeModal = this.props.closeModal;
 		const modalClasses = classNames(styles.modal, styles.flex, styles.justifyCenter, styles.personBio, styles.fadeInTransition)
 
